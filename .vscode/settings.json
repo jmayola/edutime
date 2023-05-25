@@ -1,0 +1,8 @@
+{
+    "emmet.showSuggestionsAsSnippets": false,
+    "reactSnippets.settings.prettierEnabled": false,
+    "emmet.useInlineCompletions": true,
+    "reactSnippets.settings.importReactOnTop": true,
+    "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+    "reactSnippets.settings.languageScopes": "typescript,typescriptreact,javascript,javascriptreact"
+}
