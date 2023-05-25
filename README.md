@@ -1,34 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## EduTime
 
-## Getting Started
+Es una Base de Datos que permite organizar de forma eficiente y modificable todos los horarios escolares de una Escuela, indicando profesores, aulas, horarios y cursos.
 
-First, run the development server:
+## Frameworks Utilizados
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Estamos utilizando [React](https://react.dev/reference/react) como libreria de componentes y [NextJS](https://nextjs.org/docs/getting-started/installation) como compilador de paginas web.
+Ademas utilizaremos [NodeJS](https://nodejs.org/api/) como framework para acceder al backend y [TailwindCSS](https://tailwindcss.com/docs/installation) para crear los estilos de la pagina.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Proposito
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Nuestro proposito a la hora de crear "EduTime" es el de llevar a cabo una aplicacion que cumpla el objetivo de desplejar una interfaz en la cual los alumnos de una institucion, puedan acceder y consultar de manera libre y, a su vez, poder modificar, datos sobre las clases y horarios junto con los profesores que dan las materias de la institucion; Permitiendo asi una mejor orientacion institucional a la hora de dar clases.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Grupo de Trabajo
 
-## Learn More
+# Departamento de Desarrollo:
 
-To learn more about Next.js, take a look at the following resources:
+* Julian Mayola
+* Elias Tello
+* Brian Tuillier
+* Delfina Bravo
+* Lautaro Ancasi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
