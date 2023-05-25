@@ -13,7 +13,7 @@ Nuestro proposito a la hora de crear "EduTime" es el de llevar a cabo una aplica
 
 ## Grupo de Trabajo
 
-# Departamento de Desarrollo:
+### Departamento de Desarrollo:
 
 * Julian Mayola
 * Elias Tello
