@@ -25,7 +25,6 @@ console.log(Curso)
 
     return(
         <CursosContext.Provider value={{Curso, hola}}>
-            <h1>hola mundo</h1>
            {children} 
         </CursosContext.Provider>
     )
