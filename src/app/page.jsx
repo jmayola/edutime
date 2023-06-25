@@ -1,12 +1,10 @@
 import React from "react";
-
+import Header from '../components/Index/Header.jsx'
 function main() {
   return (
-    <div className="">
-      <h1 className="center flex justify-center">Muestra Principal</h1>
-      <h1>Hola mundo</h1>
-    </div>
-  );
+      <Header></Header>
+      
+    );
 }
 
 export default main;
