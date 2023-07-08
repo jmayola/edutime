@@ -10,10 +10,22 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mongose": "^0.0.2-security",
+    "mysql2": "^3.4.5",
+    "net": "^1.0.2",
     "next": "13.4.3",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "tls": "^0.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

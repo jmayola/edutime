@@ -1,18 +1,11 @@
-"use client"
-import {
-  CursoContextProvider
-} from "src/contexts/CursosContext.jsx";
 import CursoDisplay from "@/components/Cursos/CursoDisplay";
-import Header from "@/components/Index/Header"
-function main() {
+import Header from "@/components/Index/Header";
+function main(children) {
   return (
-  <>
-  <Header></Header>
-  <CursoContextProvider>
-    <CursoDisplay>
-    </CursoDisplay>
-  </CursoContextProvider>
-  </>
-  )
+    <>
+      <Header></Header>
+        <CursoDisplay></CursoDisplay>
+    </>
+  );
 }
 export default main;

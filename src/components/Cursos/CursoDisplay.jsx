@@ -1,27 +1,28 @@
-import { CursosContext } from "@/contexts/CursosContext";
-import { useContext } from "react";
-// a la hora de ejecutar codigo backend de react, debemos ejecturarlo a traves de los components
-// debido a que en el page.js solo ejecuta codigo html directamente.
-// por eso es que solo aqui debemos ejecutar los usecontext, usestate, etc.
-function getrandom() {
-  let mat = Math.random();
-  return mat * 10;
-}
-function CursoDisplay() {
-  const { Curso } = useContext(CursosContext);
+import mysql from "mysql2";
+import Link from "next/link";
+export default async function CursoDisplay() {
+  const pool = mysql.createPool({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "juli123",
+    database: "horarios",
+  });
+  const poolAsync = pool.promise();
+  let result = (await poolAsync.query("SELECT * FROM cursos"))[0];
   return (
-    <div>
-      {Curso.map((curso) => (
-        <div className="grid grid-cols-5 grid-flow-row  p-4" key={getrandom()}>
-          <h1>{curso.curso}</h1>
-          <h1>{curso.division}</h1>
-          <h1>{curso.division}</h1>
-          <h1>{curso.division}</h1>
-          <h1>{curso.division}</h1>
-        </div>
-      ))}
-    </div>
+    <>
+      {result.map((v, index) => {
+        return (
+          <>
+            <div className="grid grid-cols-2 text-center">
+              <p>{result[index].curso}</p>
+              <p>{result[index].division}</p>
+            </div>
+            <Link className="text-center" href={`Horarios/${result[index].id}/Añadir`}>añadir</Link>
+          </>
+        );
+      })}
+    </>
   );
 }
-
-export default CursoDisplay;
