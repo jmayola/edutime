@@ -19,10 +19,11 @@ export default async function CursoDisplay() {
               <p>{result[index].curso}</p>
               <p>{result[index].division}</p>
             </div>
-            <Link className="text-center" href={`Horarios/${result[index].id}/Añadir`}>añadir</Link>
           </>
-        );
+);
       })}
+            <Link className="text-center" href={`Horarios/add`}>añadir</Link>
+
     </>
   );
 }
