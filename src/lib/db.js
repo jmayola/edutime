@@ -8,8 +8,10 @@ const pool = mysql.createPool({
   database: "horarios",
 });
 const poolAsync = pool.promise();
-export const handleClick = async () => {
+export const INSERT = async (curso, division) => {
+  let result = (await poolAsync.query("SELECT * FROM cursos"))[0];
   await poolAsync.query(
-    `INSERT INTO cursos (curso, division) VALUES (2, 3)`
+    `INSERT INTO cursos (id, curso, division) VALUES (${result.length + 1}, ${curso}, ${division})`
   );
 };
+ 

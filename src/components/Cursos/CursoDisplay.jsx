@@ -12,18 +12,21 @@ export default async function CursoDisplay() {
   let result = (await poolAsync.query("SELECT * FROM cursos"))[0];
   return (
     <>
-      {result.map((v, index) => {
-        return (
-          <>
-            <div className="grid grid-cols-2 text-center">
+      <div className="grid grid-cols-2 text-center">
+        <h1>Curso</h1>
+        <h1>Division</h1>
+        {result.map((v, index) => {
+          return (
+            <>
               <p>{result[index].curso}</p>
               <p>{result[index].division}</p>
-            </div>
-          </>
-);
-      })}
-            <Link className="text-center" href={`Horarios/add`}>añadir</Link>
-
+            </>
+          );
+        })}
+        <Link className="text-center" href={`Horarios/add`}>
+          añadir
+        </Link>
+      </div>
     </>
   );
 }
